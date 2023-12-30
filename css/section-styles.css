@@ -52,6 +52,12 @@ header {
   color: var(--tertiary-color);
 }
 
+.brand__link {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
 .brand__logo {
   width: 50px;
   height: 50px;
@@ -205,7 +211,7 @@ header {
 /* PROGRAM SECTION */
 .section-program {
   background-color: var(--secondary-color);
-  padding-top: 8rem;
+  padding-top: 12rem;
   padding-bottom: 12rem;
 }
 
@@ -262,7 +268,7 @@ header {
 .schedule__heading {
   color: var(--font-color);
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
 
   font-size: 2rem;

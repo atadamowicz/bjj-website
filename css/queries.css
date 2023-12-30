@@ -33,7 +33,7 @@
 
 @media (max-width: 1150px) {
   .nav__list {
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .hero-flex {
@@ -122,10 +122,10 @@
 
 @media (max-width: 900px) {
   .nav__list {
-    gap: 0.8rem;
+    gap: 1rem;
   }
   .nav__link {
-    font-size: 1.225rem;
+    font-size: 1.125rem;
   }
 
   .card {
