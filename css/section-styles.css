@@ -299,17 +299,21 @@ header {
 .contact__heading {
   color: var(--font-color);
   text-align: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2.5rem;
   padding-top: 2rem;
+  padding-bottom: 1rem;
   font-size: 1.5rem;
 }
 
 .contact__flex-row {
   display: flex;
-  gap: 10rem;
-  justify-content: center;
+  gap: 8rem;
+  justify-content: space-evenly;
 }
 
+.contact__col-2 {
+  margin-top: 2rem;
+}
 .contact__title {
   color: var(--tertiary-color);
   font-size: 2rem;
@@ -319,14 +323,6 @@ header {
   color: var(--font-color);
   margin-top: 0.225rem;
   font-size: 1.5rem;
-}
-
-.contact__trial-text {
-  color: var(--tertiary-color);
-}
-
-.contact__free {
-  color: var(--tertiary-color);
 }
 
 /* FOOTER */

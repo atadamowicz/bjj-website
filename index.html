@@ -208,30 +208,29 @@
     
       <section class="section-contact" id="contact">
         <div class="container">
-          <h3 class="contact__heading">Get in touch or come in for your <span class="contact__free">free</span> trial today</h3>
+          <h3 class="contact__heading">Get in touch or come in for your <span class="highlight-text">free</span> trial today</h3>
           <div class="contact__flex-row">
             <div class="contact__col-1">
               <form id="survey-form" class="contact__survey">
                 <fieldset class="fieldset-1">
-                  <label for="name" id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
-                  <label for="email" id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required></label>
+                  <label for="name" id="name-label" for="name">Name</label><input id="name" type="text" placeholder="Enter your name" required>
+                  <label for="email" id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your Email" required>
 
-                  <label for="dropdown">Why do you want to train BJJ?
+                  <label for="dropdown" class="dropdown__label" class=>Why do you want to train BJJ?</label>
                     <select id="dropdown" required>
-                      <option value="" disabled>Select the answer</option>
-                      <option value="Student">I am curious about BJJ</option>
-                      <option value="Full Time Job">I want to learn how to defend myself</option>
-                      <option value="Full Time Learner">To integrate it with my existing Martial Arts Experience</option>
-                      <option value="Prefer not to say">Prefer not to say</option>
-                      <option value="Other">Other - Please specify in the comment</option>
+                      <option class="dropdown__option" value="" disabled>Select the answer</option>
+                      <option class="dropdown__option" value="BJJ Passionate">I am curious about BJJ</option>
+                      <option class="dropdown__option" value="Self Defense">I want to learn how to defend myself</option>
+                      <option class="dropdown__option" value="Prefer not to say">Prefer not to say</option>
+                      <option class="dropdown__option" value="Other">Other- Please specify in the comment</option>
                     </select>
-                  </label> 
+                 
                  </fieldset>
 
                 <fieldset class="fieldset-2">
-                  <label for="textarea">Any comments or suggestions?<br>
+                  <label for="textarea">Any comments or suggestions?<br></label>
                     <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
-                  </label>
+                  
                 </fieldset>
                 <input type="submit" id="submit">
               </form>
