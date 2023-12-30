@@ -3,8 +3,9 @@ export function initializeSubmitMessage() {
   const messageElement = document.getElementById("submit-message");
 
   if (submitButton) {
-    submitButton.addEventListener("click", function () {
-      messageElement.textContent = "Thank you. See you on the mats!";
+    submitButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      messageElement.textContent = "Thank you.";
       messageElement.style.display = "inline-block";
     });
   }

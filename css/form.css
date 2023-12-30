@@ -44,6 +44,7 @@ fieldset p {
   border-radius: 0.25rem;
   box-sizing: border-box;
   border-radius: 0.5rem;
+  font-size: 1rem;
 }
 .fieldset-1 select {
   width: 110%;
@@ -53,6 +54,7 @@ fieldset p {
   border-radius: 0.25rem;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .dropdown__option {
@@ -76,6 +78,7 @@ fieldset p {
 }
 
 #submit {
+  display: block;
   color: var(--tertiary-color);
   border: 2px solid var(--tertiary-color);
   border-radius: 100px;
@@ -84,7 +87,7 @@ fieldset p {
   padding: 0.5em 1.2em;
   display: inline-block;
   text-decoration: none;
-  font-size: 1.225em;
+  font-size: 1.125em;
   cursor: pointer;
   background-color: var(--primary-color);
 }
