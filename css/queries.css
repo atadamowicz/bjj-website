@@ -115,6 +115,9 @@
   .schedule__flex-row {
     gap: 3rem;
   }
+  .contact__flex-row {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -150,13 +153,13 @@
   }
 
   .contact__flex-row {
-    gap: 5rem;
+    gap: 3rem;
   }
   .contact__title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .contact__text {
-    font-size: 1.225rem;
+    font-size: 1.125rem;
   }
 }
 

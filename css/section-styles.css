@@ -312,7 +312,6 @@ header {
 
 .contact__flex-row {
   display: flex;
-  gap: 8rem;
   justify-content: space-evenly;
 }
 
