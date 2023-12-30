@@ -1,0 +1,14 @@
+{
+  "name": "bjj-website",
+  "version": "1.0.0",
+  "description": "Fully Responsive website for a mock Brazilian Jiu- Jitsu Academy",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Arkadiusz Tomasz Adamowicz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}

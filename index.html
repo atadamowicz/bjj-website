@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="No Fluff Ju Jitsu is the modern approach to practical self defense"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&family=Nunito:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/accordion.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/queries.css" /> -->
+    <script type="module" src="js/main.js"></script>
+    <title>No Fluff - BJJ Academy</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-flex container">
+          <div class="brand-container">
+            <img src="img/logo.png" class="brand__logo" alt="Academy Logo">
+            <p class="brand__title highlight-text">No Fluff BJJ</p>
+          </div>
+          <a href="javascript:void(0);" class="nav__toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#team">Team</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#program">Program</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+      </nav>
+   
+      <section class="section-hero container">
+        <div class="hero-flex">
+          <div class=hero-text-container>
+            <h1 class="hero__headline">Welcome to <span class="highlight-text">No Fluff BJJ</span>, where we prioritize strong foundations over chasing after fancy techniques.</h1>
+            <p class="hero__description">Our focus is on simple, effective solutions in Brazilian Jiu-Jitsu, making it accessible and practical for self defense and Mixed Martial Arts.</p>
+            <a href="#contact" class="btn cta--hero">Join us</a>
+          </div>
+        
+          <div class="hero-img-container">
+            <img class="hero__img"src="img/hero.png" alt="Two atlethes grappling">
+            <p class="hero__quote">“I am a shark, the ground is my ocean, and most people can’t even swim.” <span class="hero__author">&nbsp;Rickson Gracie</span></p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section-cards" id="team">
+        <div class="cards-container">
+          <div class="cards">
+            <button class="cards__btn cards__btn--left">
+    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="cards__btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+            </button>
+            <div class="cards__coach-1 card">
+              <img src="img/coaches/coach-1.jpeg" class="cards__image" alt="Coach Megan">
+              <h2>Coach Megan</h2>
+              <ul class="cards__list">
+                <li class="cards__list-item">BJJ Black Belt</li>
+                <li class="cards__list-item">Judo Black Belt</li>
+                <li class="cards__list-item">Woman Self Defense Coach</li>
+              </ul>
+            </div>
+            <div class="cards__coach-2 card">
+              <img src="img/coaches/coach-2.jpeg" class="cards__image" alt="Coach Alex">
+              <h2>Coach Alex</h2>
+              <ul class="cards__list">
+                <li class="cards__list-item">BJJ Black Belt</li>
+                <li class="cards__list-item">ADCC Champion</li>
+                <li class="cards__list-item">MMA record: 10-2</li>
+              </ul>
+            </div>
+            <div class="cards__coach-3 card">
+              <img src="img/coaches/coach-3.jpeg" class="cards__image" alt="Coach Diego">
+              <h2>Coach Diego</h2>
+              <ul class="cards__list">
+              <li class="cards__list-item">BJJ Black Belt</li>
+              <li class="cards__list-item">2x No-Gi World Champion</li>
+              <li class="cards__list-item">D1 College Wrestler</li>
+              </ul>
+            </div>
+            <div class="cards__coach-4 card card--hidden">
+              <img src="img/coaches/coach-4.jpeg" class="cards__image"  alt="Coach Gordon">
+              <h2>Coach Gordon</h2>
+              <ul class="cards__list">
+                <li class="cards__list-item">BJJ Black Belt</li>
+                <li class="cards__list-item">Self Defense Expert</li>
+                <li class="cards__list-item">Over 100+ seminars taught</li>
+              </ul>
+            </div>
+            <button class="cards__btn cards__btn--right">
+    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="cards__btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+            </button>
+          </div>
+          <button class="toggle-classes-btn">Expand</button>
+        </div>
+      </section>
+
+      <section class="section-program" id="program">
+        <div class="program-flex container">
+        <img class="program__img"src="img/grappling.png">
+        <div class="program__text">
+        <h2 class="program__title">Our Program</h2>
+        <p class="program__description">Joining <span class="highlight-text">No Fluff BJJ</span> means diving into pure, effective BJJ.</p>
+        <ul class="menu">
+          <li class="list"><a href="javascript:void(0);" class="list__link">Self Defense Classes</a>
+            <ul class="items">
+              <li class="list__item">BJJ Fundamentals For Self Defense</li>
+              <li class="list__item">Woman Self Defense Classes</li>
+              <li class="list__item">No Previous Experience Required</li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0);" class="list__link">Competitive Edge Training</a>
+            <ul class="items">
+              <li class="list__item">For Aspirants in MMA & BJJ Tournaments</li>
+              <li class="list__item">Balancing Strong Fundamentals & Advanced Strategies</li>
+              <li class="list__item">Regular Live Sparring Sessions</li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0);" class="list__link">Professional Coaching</a>
+            <ul class="items">
+              <li class="list__item">Best Coaching From Top Players In The Game</li>
+              <li class="list__item">Coaches With 10+ Years In Martial Arts</li>
+              <li class="list__item">Online Extra Video Materials</li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0);" class="list__link">Positive Atmosphere</a>
+            <ul class="items">
+              <li class="list__item">The Mats Don't Discriminate</li>
+              <li class="list__item">Everybody Is Welcome</li>
+              <li class="list__item">Own Your Journey</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+      </section>
+      <section class="section-schedule" id="schedule">
+        <div class="container">
+          <h3 class="schedule__heading">Class Schedule</h3>
+          <div class="schedule__flex-row">
+            <div class="schedule__col-1"><h3 class="schedule__title">BJJ Fundamentals</h3>
+              <p class="schedule__text"><span class="date highlight-text">Mon</span> 7:30 pm - 9pm</p>
+              <p class="schedule__text"><span class="date highlight-text">Wed</span> 7 pm - 8:30 pm </p>
+              <p class="schedule__text"><span class="date highlight-text">Fri</span> 7 pm - 8 pm</p>
+            </div>
+            <div class="schedule__col-2"><h3 class="schedule__title">BJJ Mixed Group</h3>
+              <p class="schedule__text"><span class="date highlight-text">Mon</span> 6 pm - 7:30 pm</p>
+              <p class="schedule__text"><span class="date highlight-text">Wed</span> 6 pm - 7:30 pm </p>
+              <p class="schedule__text"><span class="date highlight-text">Fri</span> 6 pm - 7 pm</p>
+            </div>
+            <div class="schedule__col-3"><h3 class="schedule__title">Woman Self Defense</h3>
+              <p class="schedule__text"><span class="date highlight-text">Sat</span> 10 am - 11:30 am</p>
+              <p class="schedule__text"><span class="date highlight-text">Sun</span> 10 am - 11:30 am </p>
+            </div>
+          </div>
+        </div>
+        <h4 class="price">Price: 49$ Per Month | No Fluff</h4>
+      </section>
+    
+      <section class="section-contact" id="contact">
+        <div class="container">
+          <h3 class="contact__heading">Get in touch or come in for your <span class="contact__free">free</span> trial today</h3>
+          <div class="contact__flex-row">
+            <div class="contact__col-1">
+              <form id="survey-form" class="contact__survey">
+                <fieldset class="fieldset-1">
+                  <label for="name" id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+                  <label for="email" id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required></label>
+
+                  <label for="dropdown">Why do you want to train BJJ?
+                    <select id="dropdown" required>
+                      <option value="" disabled>Select the answer</option>
+                      <option value="Student">I am curious about BJJ</option>
+                      <option value="Full Time Job">I want to learn how to defend myself</option>
+                      <option value="Full Time Learner">To integrate it with my existing Martial Arts Experience</option>
+                      <option value="Prefer not to say">Prefer not to say</option>
+                      <option value="Other">Other - Please specify in the comment</option>
+                    </select>
+                  </label> 
+                 </fieldset>
+
+                <fieldset class="fieldset-2">
+                  <label for="textarea">Any comments or suggestions?<br>
+                    <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+                  </label>
+                </fieldset>
+                <input type="submit" id="submit">
+              </form>
+            </div>
+            <div class="contact__col-2">
+              <h4 class="contact__title">Address</h4>
+              <p class="contact__text">18 Grand St. Lake Forest, CA 92630</p> 
+              <h4 class="contact__title">Phone</h4>
+              <p class="contact__text">123-456-789</p>
+              <h4 class="contact__title">Email</h4>
+              <p class="contact__text">hello@nofluffbjj.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <h5 class="footer__heading">Mock Responsive Website Project - Designed and Coded by Arkadiusz Tomasz Adamowicz<h5>
+        <p class="footer__description">Copyright © 2023 atadamowicz - All Rights Reserved.
+        <p class="footer__description">All images AI Generated.</p>
+      </div>
+    </footer>
+   
+  </body>
+</html>

@@ -1,0 +1,273 @@
+@media (max-width: 1300px) {
+  .hero__headline {
+    font-size: 1.725rem;
+    margin-top: 5rem;
+  }
+
+  .hero__description {
+    font-size: 1.225rem;
+    margin-top: 2.5rem;
+  }
+  .hero-flex {
+    gap: 4rem;
+  }
+
+  .cta--hero {
+    font-size: 1.225rem;
+  }
+  .program__title {
+    margin-top: -5rem;
+  }
+
+  .program-flex {
+    gap: 0;
+  }
+  .program__img {
+    width: 400px;
+    height: 400px;
+  }
+  .cards__list-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .nav__list {
+    gap: 3rem;
+  }
+
+  .hero-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .section-hero {
+    padding-top: 0;
+  }
+  .hero__headline {
+    margin-top: 4rem;
+    width: 70%;
+    line-height: 1.225;
+    font-size: 2rem;
+  }
+  .hero__description {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    width: 70%;
+  }
+
+  .cta--hero {
+    margin-right: 2rem;
+  }
+
+  .hero__img {
+    margin-top: 0;
+  }
+  .hero__quote {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .section-program {
+    padding-top: 4rem;
+    padding-bottom: 8em;
+  }
+  .program-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .program__img {
+    display: none;
+  }
+
+  .program__text {
+    width: 100%;
+  }
+
+  .program__title {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .program__description {
+    margin-bottom: 2rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cards__list-item {
+    font-size: 0.9rem;
+  }
+  .card {
+    /* transform: scale(1.2); */
+    height: 27rem;
+    width: 13rem;
+  }
+  .cards__btn--left {
+    transform: translate(450%);
+  }
+  .cards__btn--right {
+    transform: translate(-450%);
+  }
+  .schedule__flex-row {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav__list {
+    gap: 0.8rem;
+  }
+  .nav__link {
+    font-size: 1.225rem;
+  }
+
+  .card {
+    height: 23.5rem;
+    width: 10rem;
+  }
+
+  .card h2 {
+    font-size: 1.225rem;
+  }
+  .cards__list-item {
+    font-size: 0.9rem;
+  }
+  .cards__btn--left {
+    transform: translate(350%);
+  }
+  .cards__btn--right {
+    transform: translate(-350%);
+  }
+  .schedule__flex-row {
+    gap: 2rem;
+  }
+  .schedule__text {
+    font-size: 1.225rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav__toggle-button {
+    display: flex;
+  }
+
+  .nav-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .nav__link {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav__list--active {
+    display: flex;
+  }
+  .toggle-classes-btn {
+    display: none;
+  }
+
+  .section-cards {
+    padding-bottom: 20rem;
+  }
+  .cards__btn--left {
+    position: absolute;
+    bottom: -16.225rem;
+    right: 8rem;
+  }
+  .cards__btn--right {
+    position: absolute;
+    bottom: -16.225rem;
+    left: 8rem;
+  }
+  .cards__btn {
+    padding: 0.3em;
+  }
+  .card--active {
+    position: absolute;
+  }
+  .card--previous {
+    position: absolute;
+    right: -1rem;
+  }
+  .card--next {
+    position: absolute;
+    left: -1rem;
+  }
+
+  .program-flex {
+    gap: 5rem;
+  }
+
+  .program__title {
+    margin-top: -2rem;
+    text-align: center;
+  }
+
+  .menu {
+    width: 80%;
+  }
+
+  .list__link {
+    font-size: 1rem;
+  }
+  .schedule__flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .contact__heading {
+    margin-bottom: 2rem;
+  }
+  .contact__flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__col-2 {
+    margin-top: -7rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero__headline {
+    font-size: 1.5rem;
+  }
+
+  .hero__description {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    align-items: start;
+  }
+
+  .list {
+    margin-bottom: 0.5rem;
+  }
+
+  .active > .items li {
+    border-bottom: 1px solid #010202;
+    list-style: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .items .list__item {
+    padding: 0.5rem;
+  }
+}
