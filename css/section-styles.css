@@ -63,6 +63,24 @@ header {
 /* End of Typography*/
 
 /* NAVIGATION */
+.nav-placeholder {
+  display: none;
+  width: 100%;
+}
+
+.nav {
+  background-image: linear-gradient(#14192c, #14192c);
+  transition: all 0.3 ease-in-out;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .brand-container {
   display: flex;
   align-items: center;
@@ -85,19 +103,6 @@ header {
   width: 100%;
   background-color: white;
   border-radius: 10px;
-}
-
-.nav {
-  background-image: linear-gradient(#14192c, #14192c);
-  transition: all 0.3 ease-in-out;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-}
-.fixed-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 }
 
 .nav__list {
