@@ -72,7 +72,7 @@ header {
 .nav__toggle-button {
   display: none;
   position: absolute;
-  top: 1.5rem;
+  top: 1.7rem;
   right: 1rem;
   flex-direction: column;
   justify-content: space-between;
