@@ -212,14 +212,17 @@
       <section class="section-contact" id="contact">
         <div class="container">
           <h3 class="contact__heading">Get in touch or come in for your <span class="highlight-text">free</span> trial today</h3>
+          <p id="submit-message">Thank you and see you on the mats!</p>
+         
+
           <div class="contact__flex-row">
             <div class="contact__col-1">
-              <form id="survey-form" class="contact__survey">
+              <form id="survey-form" class="contact__survey" action="#contact">
                 <fieldset class="fieldset-1">
-                  <label for="name" id="name-label" for="name">Name</label><input id="name" type="text" placeholder="Enter your name" required>
-                  <label for="email" id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your Email" required>
+                  <label for="name" id="name-label" >Name</label><input id="name" type="text" placeholder="Enter your name" required>
+                  <label for="email" id="email-label" >Email</label><input id="email" type="email" placeholder="Enter your Email" required>
 
-                  <label for="dropdown" class="dropdown__label" class=>Why do you want to train BJJ?</label>
+                  <label for="dropdown" class="dropdown__label">Why do you want to train BJJ?</label>
                     <select id="dropdown" required>
                       <option class="dropdown__option" value="" disabled>Select the answer</option>
                       <option class="dropdown__option" value="BJJ Passionate">I am curious about BJJ</option>
@@ -236,7 +239,6 @@
                   
                 </fieldset>
                 <input type="submit" id="submit">
-                <p id="submit-message"></p>
               </form>
             </div>
             <div class="contact__col-2">

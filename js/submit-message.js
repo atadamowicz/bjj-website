@@ -1,12 +1,12 @@
-export function initializeSubmitMessage() {
-  const submitButton = document.getElementById("submit");
+export const initializeSubmitMessage = () => {
+  const form = document.getElementById("survey-form");
   const messageElement = document.getElementById("submit-message");
 
-  if (submitButton) {
-    submitButton.addEventListener("click", function (event) {
-      event.preventDefault();
-      messageElement.textContent = "Thank you.";
-      messageElement.style.display = "inline-block";
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      if (form.checkValidity()) {
+        messageElement.style.visibility = "visible";
+      }
     });
   }
-}
+};

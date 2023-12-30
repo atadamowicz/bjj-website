@@ -91,3 +91,11 @@ fieldset p {
   cursor: pointer;
   background-color: var(--primary-color);
 }
+
+#submit-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--tertiary-color);
+  text-align: center;
+  visibility: hidden;
+}
