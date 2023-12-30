@@ -96,6 +96,7 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    text-align: center;
   }
 
   .cards__list-item {
@@ -227,7 +228,7 @@
   }
 
   .program__title {
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
     text-align: center;
   }
 
