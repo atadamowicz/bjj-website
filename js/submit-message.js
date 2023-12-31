@@ -6,6 +6,7 @@ export const initializeSubmitMessage = () => {
     form.addEventListener("submit", function (event) {
       if (form.checkValidity()) {
         messageElement.style.visibility = "visible";
+        event.preventDefault();
       }
     });
   }
