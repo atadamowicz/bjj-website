@@ -1,8 +1,9 @@
 const initializeCardCarousel = (cardsArray) => {
-  let cardActive = document.querySelector(".card--active") || cardsArray[1]; // Setting 2nd card to active by default
+  // Second card active by default if no active card is found
+  let cardActive = document.querySelector(".card--active") || cardsArray[1];
   cardActive.classList.add("card--active");
 
-  // Setting up the previous and next cards
+  // Setting up the positions of adjacent cards
   const updateAdjacentCards = () => {
     const activeIndex = cardsArray.indexOf(cardActive);
     let cardPreviousEl =
@@ -22,15 +23,15 @@ const handleWindowResize = (toggleClassesButton) => {
     window.innerWidth < 700 &&
     toggleClassesButton.textContent.includes("Collapse")
   ) {
-    toggleClassesButton.click(); // Kliknięcie przycisku, aby złożyć karty
+    toggleClassesButton.click();
   }
 };
 
-// Card Usage Handler
 const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
   let { cardActive, updateAdjacentCards } = initializeCardCarousel(cardsArray);
   let { cardPreviousEl, cardNextEl } = updateAdjacentCards();
 
+  // Shifts cards left or right
   const moveCard = (direction) => {
     // Remove current classes
     cardsArray.forEach((card) =>
@@ -43,7 +44,7 @@ const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
     );
 
     if (direction === "left") {
-      // Move left
+      // Move to the previous card
       cardNextEl = cardActive;
       cardActive = cardPreviousEl;
       const newPreviousIndex =
@@ -51,7 +52,7 @@ const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
         cardsArray.length;
       cardPreviousEl = cardsArray[newPreviousIndex];
     } else {
-      // Move right
+      // Move to the next card
       cardPreviousEl = cardActive;
       cardActive = cardNextEl;
       const newNextIndex =
@@ -59,12 +60,12 @@ const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
       cardNextEl = cardsArray[newNextIndex];
     }
 
-    // Set classes for new cards
+    // Set classes for new card positions
     cardActive.classList.add("card--active");
     cardPreviousEl.classList.add("card--previous");
     cardNextEl.classList.add("card--next");
 
-    // Add class hidden for extra card
+    // Hide cards not adjacent to the active card
     cardsArray.forEach((card) => {
       if (![cardPreviousEl, cardActive, cardNextEl].includes(card)) {
         card.classList.add("card--hidden");
@@ -76,7 +77,6 @@ const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
   buttonRight.addEventListener("click", () => moveCard("right"));
 };
 
-// Toggling carousel on and off
 const toggleCardClasses = (cardsArray, toggleClassesButton, cardButtons) => {
   let isClassesRemoved = false;
   let cardsState = [];
@@ -94,6 +94,7 @@ const toggleCardClasses = (cardsArray, toggleClassesButton, cardButtons) => {
     });
   };
 
+  // Function to toggle between expanded and collapsed states of the carousel
   const removeOrRestoreClasses = () => {
     if (!isClassesRemoved) {
       saveCardsState();
