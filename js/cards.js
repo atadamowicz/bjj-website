@@ -18,6 +18,7 @@ const initializeCardCarousel = (cardsArray) => {
   return { cardActive, updateAdjacentCards };
 };
 
+// Collapses cards when expanded and window width is less than 700px
 const handleWindowResize = (toggleClassesButton) => {
   if (
     window.innerWidth < 700 &&
@@ -33,7 +34,6 @@ const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
 
   // Shifts cards left or right
   const moveCard = (direction) => {
-    // Remove current classes
     cardsArray.forEach((card) =>
       card.classList.remove(
         "card--active",
@@ -77,6 +77,7 @@ const handleCardNavigation = (cardsArray, buttonLeft, buttonRight) => {
   buttonRight.addEventListener("click", () => moveCard("right"));
 };
 
+// Function to toggle between expanded and collapsed states of the carousel
 const toggleCardClasses = (cardsArray, toggleClassesButton, cardButtons) => {
   let isClassesRemoved = false;
   let cardsState = [];
@@ -94,7 +95,6 @@ const toggleCardClasses = (cardsArray, toggleClassesButton, cardButtons) => {
     });
   };
 
-  // Function to toggle between expanded and collapsed states of the carousel
   const removeOrRestoreClasses = () => {
     if (!isClassesRemoved) {
       saveCardsState();
@@ -128,7 +128,7 @@ export const carouselController = () => {
   const toggleClassesButton = document.querySelector(".toggle-classes-btn");
   const cardButtons = document.querySelectorAll(".cards__btn");
 
-  // Text change when toggling carousel
+  // Text change on button when toggling carousel state
   toggleClassesButton.addEventListener("click", () => {
     toggleClassesButton.textContent =
       toggleClassesButton.textContent === "Expand" ? "Collapse" : "Expand";
