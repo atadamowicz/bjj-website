@@ -192,6 +192,13 @@
     display: none;
   }
 
+  .hero__headline {
+    width: 80%;
+  }
+
+  .hero__description {
+    width: 80%;
+  }
   .section-cards {
     padding-bottom: 20rem;
   }
@@ -262,13 +269,16 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .hero__headline {
-    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 1.725rem;
+    width: 90%;
   }
 
   .hero__description {
     font-size: 1.2rem;
+    width: 90%;
   }
 
   .list {
