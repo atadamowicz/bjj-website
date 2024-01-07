@@ -22,7 +22,6 @@ body {
 .noscript-message {
   color: white;
   background-color: black;
-  /* background-color: yellow; */
   font-weight: bold;
   text-align: center;
   font-size: 1.5rem;
@@ -35,12 +34,6 @@ body {
 
 header {
   background-color: var(--secondary-color);
-  /* background-image: linear-gradient(
-      rgba(34, 34, 34, 0.8),
-      rgba(34, 34, 34, 0.6)
-    ),
-    url(../img/hero/hero-2.jpg); */
-  /* size: cover; */
   min-height: 100vh;
 }
 
