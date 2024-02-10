@@ -10,8 +10,7 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-dropdown").selectOption("Prefer not to say");
     await page.getByTestId("test-textarea").fill("prefer not to say");
     await page.getByTestId("test-submit").click();
-    // #submit-message -getByTestId
-    await expect(page.locator("#submit-message")).toHaveAttribute(
+    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
       "style",
       "visiblity: visible"
     );
@@ -22,7 +21,7 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-dropdown").selectOption("BJJ Passionate");
     await page.getByTestId("test-textarea").fill("123");
     await page.getByTestId("test-submit").click();
-    await expect(page.locator("#submit-message")).toHaveAttribute(
+    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
       "style",
       "visiblity: hidden"
     );
@@ -33,7 +32,7 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-dropdown").selectOption("BJJ Passionate");
     await page.getByTestId("test-textarea").fill("123");
     await page.getByTestId("test-submit").click();
-    await expect(page.locator("#submit-message")).toHaveAttribute(
+    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
       "style",
       "visiblity: hidden"
     );
@@ -44,7 +43,7 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-email").fill("johndoe@gmail.com");
     await page.getByTestId("test-textarea").fill("123");
     await page.getByTestId("test-submit").click();
-    await expect(page.locator("#submit-message")).toHaveAttribute(
+    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
       "style",
       "visiblity: hidden"
     );
@@ -55,7 +54,7 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-email").fill("johndoe.com");
     await page.getByTestId("test-dropdown").selectOption("Prefer not to say");
     await page.getByTestId("test-submit").click();
-    await expect(page.locator("#submit-message")).toHaveAttribute(
+    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
       "style",
       "visiblity: hidden"
     );

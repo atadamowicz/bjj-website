@@ -11,14 +11,15 @@ test.describe("Mobile coach cards tests", () => {
     await page.getByTestId("test-cards__btn--right").click({
       clickCount: 4,
     });
-    // await expect(page.getByTestId("test-cards__coach-2")).toBeVisible();
+    await expect(page.getByTestId("test-cards__coach-2")).toBeVisible();
+
     await page.getByTestId("test-cards__btn--left").click({
       clickCount: 4,
     });
-    // await expect(page.getByTestId("test-cards__coach-2")).toBeVisible();
+    await expect(page.getByTestId("test-cards__coach-2")).toBeVisible();
   });
 
   test("Coach cards cannot be expanded on mobile", async ({ page }) => {
-    // await expect(page.getByTestId("test-toggle-classes-btn")).not.toBeVisible();
+    await expect(page.getByTestId("test-toggle-classes-btn")).not.toBeVisible();
   });
 });
