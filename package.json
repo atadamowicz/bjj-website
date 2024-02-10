@@ -4,11 +4,13 @@
   "description": "Fully Responsive website for a mock Brazilian Jiu- Jitsu Academy",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --dist-dir ./dist",
+    "test": "playwright test"
   },
   "author": "Arkadiusz Tomasz Adamowicz",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.41.2",
     "parcel": "^2.10.3"
   }
 }

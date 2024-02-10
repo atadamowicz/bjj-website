@@ -5,3 +5,6 @@ dist/
 *.log
 tmp/
 temp/
+test-results/
+.playwright/
+playwright-report
