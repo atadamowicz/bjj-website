@@ -25,7 +25,7 @@
         <div class="nav-flex container">
           <div class="brand-container">
             <a href="#" class="brand__link"><img src="img/logo.png" class="brand__logo" alt="Academy Logo"></a>
-            <a href="#" class="brand__link"><p class="brand__title highlight-text" id="no-fluff-bjj">No Fluff BJJ</p></a>
+            <a href="#" class="brand__link"><p class="brand__title highlight-text" data-testid="test-brand__link">No Fluff BJJ</p></a>
           </div>
           <a href="javascript:void(0);" class="nav__toggle-button">
             <span class="bar"></span>
@@ -34,19 +34,19 @@
           </a>
           <ul class="nav__list">
             <li class="nav__list-item">
-              <a class="nav__link" href="#" id="home">Home</a>
+              <a class="nav__link" href="#" data-testid="test-home">Home</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__link" href="#team" id="team">Team</a>
+              <a class="nav__link" href="#team" data-testid="test-team">Team</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__link" href="#program" id="program">Program</a>
+              <a class="nav__link" href="#program" data-testid="test-program">Program</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__link" href="#schedule" id="schedule">Schedule</a>
+              <a class="nav__link" href="#schedule" data-testid="test-schedule">Schedule</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__link" href="#contact" id="contact">Contact</a>
+              <a class="nav__link" href="#contact" data-testid="test-contact">Contact</a>
             </li>
           </ul>
       </nav>
@@ -56,7 +56,7 @@
           <div class=hero-text-container>
             <h1 class="hero__headline">Welcome to <span class="highlight-text">No Fluff BJJ</span>, where we prioritize strong foundations over chasing after fancy techniques.</h1>
             <p class="hero__description">Our focus is on simple, effective solutions in Brazilian Jiu-Jitsu, making it accessible and practical for self defense and Mixed Martial Arts.</p>
-            <a href="#contact" class="btn cta--hero" id="join-us">Join us</a>
+            <a href="#contact" class="btn cta--hero" data-testid="test-cta--hero">Join us</a>
           </div>
         
           <div class="hero-img-container">
@@ -68,10 +68,10 @@
     </header>
 
     <main>
-      <section class="section-cards">
+      <section class="section-cards" id="team">
         <div class="cards-container">
           <div class="cards">
-            <button class="cards__btn cards__btn--left" id="cards__btn--left">
+            <button class="cards__btn cards__btn--left" data-testid="test-cards__btn--left">
     <svg
             xmlns="http://www.w3.org/2000/svg"
             class="cards__btn-icon"
@@ -123,7 +123,7 @@
                 <li class="cards__list-item">Over 100+ seminars taught</li>
               </ul>
             </div>
-            <button class="cards__btn cards__btn--right" id="cards__btn--right">
+            <button class="cards__btn cards__btn--right" data-testid="test-cards__btn--right">
     <svg
             xmlns="http://www.w3.org/2000/svg"
             class="cards__btn-icon"
@@ -140,7 +140,7 @@
           </svg>
             </button>
           </div>
-          <button class="toggle-classes-btn" id="toggle-classes-btn">Expand</button>
+          <button class="toggle-classes-btn" data-testid="test-toggle-classes-btn">Expand</button>
         </div>
       </section>
 
@@ -151,28 +151,28 @@
         <h2 class="program__title" id="our-program">Our Program</h2>
         <p class="program__description">Joining <span class="highlight-text">No Fluff BJJ</span> means diving into pure, effective BJJ.</p>
         <ul class="menu">
-          <li class="list"><a href="javascript:void(0);" class="list__link" id="list__link-1">Self Defense Classes</a>
+          <li class="list"><a href="javascript:void(0);" class="list__link" data-testid="test-list__link-1">Self Defense Classes</a>
             <ul class="items">
               <li class="list__item">BJJ Fundamentals For Self Defense</li>
               <li class="list__item">Woman Self Defense Classes</li>
               <li class="list__item">No Previous Experience Required</li>
             </ul>
           </li>
-          <li class="list"><a href="javascript:void(0);" class="list__link" id="list__link-2">Competitive Edge Training</a>
+          <li class="list"><a href="javascript:void(0);" class="list__link" data-testid="test-list__link-2">Competitive Edge Training</a>
             <ul class="items">
               <li class="list__item">For Aspirants in MMA & BJJ Tournaments</li>
               <li class="list__item">Balancing Strong Fundamentals & Advanced Strategies</li>
               <li class="list__item">Regular Live Sparring Sessions</li>
             </ul>
           </li>
-          <li class="list"><a href="javascript:void(0);" class="list__link" id="list__link-3">Professional Coaching</a>
+          <li class="list"><a href="javascript:void(0);" class="list__link" data-testid="test-list__link-3">Professional Coaching</a>
             <ul class="items">
               <li class="list__item">Best Coaching From Top Players In The Game</li>
               <li class="list__item">Coaches With 10+ Years In Martial Arts</li>
               <li class="list__item">Online Extra Video Materials</li>
             </ul>
           </li>
-          <li class="list"><a href="javascript:void(0);" class="list__link" id="list__link-4">Positive Atmosphere</a>
+          <li class="list"><a href="javascript:void(0);" class="list__link" data-testid="test-list__link-4">Positive Atmosphere</a>
             <ul class="items">
               <li class="list__item">The Mats Don't Discriminate</li>
               <li class="list__item">Everybody Is Welcome</li>
@@ -216,26 +216,26 @@
             <div class="contact__col-1">
               <form id="survey-form" class="contact__survey" action="#contact">
                 <fieldset class="fieldset-1">
-                  <label for="name" id="name-label" >Name</label><input id="name" type="text" placeholder="Enter your name" required>
-                  <label for="email" id="email-label" >Email</label><input id="email" type="email" placeholder="Enter your Email" required>
+                  <label for="name" id="name-label" >Name</label><input type="text" placeholder="Enter your name" required data-testid="test-name">
+                  <label for="email" id="email-label" >Email</label><input type="email" placeholder="Enter your Email" required data-testid="test-email">
 
                   <label for="dropdown" class="dropdown__label">Why do you want to train BJJ?</label>
-                    <select id="dropdown" required>
-                      <option class="dropdown__option" value="" disabled>Select the answer</option>
-                      <option class="dropdown__option" value="BJJ Passionate">I am curious about BJJ</option>
-                      <option class="dropdown__option" value="Self Defense">I want to learn how to defend myself</option>
-                      <option class="dropdown__option" value="Prefer not to say">Prefer not to say</option>
-                      <option class="dropdown__option" value="Other">Other- Please specify in the comment</option>
+                    <select id="dropdown" data-testid="test-dropdown" required>
+                      <option class="dropdown__option" value="" disabled selected data-testid="test-dropdown-option-default">Select the answer</option>
+                      <option class="dropdown__option" value="BJJ Passionate" data-testid="test-dropdown-option-1">I am curious about BJJ</option>
+                      <option class="dropdown__option" value="Self Defense" data-testid="test-dropdown-option-2">I want to learn how to defend myself</option>
+                      <option class="dropdown__option" value="Prefer not to say" data-testid="test-dropdown-option-3">Prefer not to say</option>
+                      <option class="dropdown__option" value="Other" data-testid="test-dropdown-option-4">Other- Please specify in the comment</option>
                     </select>
                  
                  </fieldset>
 
                 <fieldset class="fieldset-2">
                   <label for="textarea">Any comments or suggestions?<br></label>
-                    <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+                    <textarea id="textarea" placeholder="Enter your comment here..." data-testid="test-textarea"></textarea>
                   
                 </fieldset>
-                <input type="submit" id="submit">
+                <input type="submit" id="submit" data-testid="test-submit">
               </form>
             </div>
             <div class="contact__col-2">
