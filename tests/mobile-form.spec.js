@@ -12,9 +12,10 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-dropdown").selectOption("Prefer not to say");
     await page.getByTestId("test-textarea").fill("prefer not to say");
     await page.getByTestId("test-submit").click();
-    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
+    const submitMessage = await page.getByTestId("test-submit-message");
+    await expect(submitMessage).toHaveAttribute(
       "style",
-      "visiblity: visible"
+      expect.stringContaining("visibility: visible")
     );
   });
 
@@ -23,10 +24,8 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-dropdown").selectOption("BJJ Passionate");
     await page.getByTestId("test-textarea").fill("123");
     await page.getByTestId("test-submit").click();
-    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
-      "style",
-      "visiblity: hidden"
-    );
+    const submitMessage = await page.getByTestId("test-submit-message");
+    await expect(submitMessage).not.toBeVisible();
   });
 
   test("Submit form with no email address", async ({ page }) => {
@@ -34,10 +33,8 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-dropdown").selectOption("BJJ Passionate");
     await page.getByTestId("test-textarea").fill("123");
     await page.getByTestId("test-submit").click();
-    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
-      "style",
-      "visiblity: hidden"
-    );
+    const submitMessage = await page.getByTestId("test-submit-message");
+    await expect(submitMessage).not.toBeVisible();
   });
 
   test("Submit form with no reason selected", async ({ page }) => {
@@ -45,10 +42,8 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-email").fill("johndoe@gmail.com");
     await page.getByTestId("test-textarea").fill("123");
     await page.getByTestId("test-submit").click();
-    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
-      "style",
-      "visiblity: hidden"
-    );
+    const submitMessage = await page.getByTestId("test-submit-message");
+    await expect(submitMessage).not.toBeVisible();
   });
 
   test("Submit form with wrong email format", async ({ page }) => {
@@ -56,9 +51,7 @@ test.describe("Desktop contact form tests", () => {
     await page.getByTestId("test-email").fill("johndoe.com");
     await page.getByTestId("test-dropdown").selectOption("Prefer not to say");
     await page.getByTestId("test-submit").click();
-    await expect(page.getByTestId("test-submit-message")).toHaveAttribute(
-      "style",
-      "visiblity: hidden"
-    );
+    const submitMessage = await page.getByTestId("test-submit-message");
+    await expect(submitMessage).not.toBeVisible();
   });
 });

@@ -1,7 +1,6 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Desktop navigation tests", () => {
-  test.use({});
   test("Navigate page sections using links", async ({ page }) => {
     await page.goto("https://bjj-website.vercel.app/");
     await page.getByTestId("test-team").click();
@@ -17,7 +16,7 @@ test.describe("Desktop navigation tests", () => {
     await expect(page.locator("#contact")).toBeVisible();
 
     await page.getByTestId("test-home").click();
-    await expect(page.locator("#")).toBeVisible();
+    await page.waitForFunction(() => window.scrollY === 0);
 
     await page.getByTestId("test-cta--hero").click();
     await expect(page.locator("#contact")).toBeVisible();
